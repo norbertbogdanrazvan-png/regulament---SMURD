@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha Romania Roleplay | Regulament Medium Roleplay</title>
+
+```
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background:
+            radial-gradient(circle at top, rgba(212,167,44,0.12), transparent 35%),
+            linear-gradient(135deg, #080b12, #111827 55%, #080b12);
+        color: #e5e7eb;
+        line-height: 1.7;
+    }
+
+    .container {
+        width: 92%;
+        max-width: 1150px;
+        margin: 40px auto;
+    }
+
+    .hero {
+        position: relative;
+        overflow: hidden;
+        padding: 75px 35px;
+        text-align: center;
+        border: 1px solid rgba(212,167,44,0.35);
+        border-radius: 22px;
+        background:
+            linear-gradient(rgba(8,11,18,0.82), rgba(8,11,18,0.92)),
+            radial-gradient(circle at center, rgba(212,167,44,0.18), transparent 60%);
+        box-shadow: 0 25px 80px rgba(0,0,0,0.45);
+    }
+
+    .hero::before {
+        content: "";
+        position: absolute;
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+        background: rgba(212,167,44,0.08);
+        filter: blur(50px);
+        top: -170px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .brand {
+        position: relative;
+        color: #d4a72c;
+        font-size: 18px;
+        font-weight: bold;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+    }
+
+    .hero h1 {
+        position: relative;
+        margin-top: 10px;
+        font-size: clamp(40px, 7vw, 75px);
+        color: #ffffff;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+
+    .hero h2 {
+        position: relative;
+        margin-top: 8px;
+        color: #d4a72c;
+        font-size: clamp(22px, 4vw, 34px);
+        text-transform: uppercase;
+    }
+
+    .edition {
+        position: relative;
+        display: inline-block;
+        margin-top: 20px;
+        padding: 7px 18px;
+        border: 1px solid rgba(212,167,44,0.5);
+        border-radius: 50px;
+        color: #d4a72c;
+        font-weight: bold;
+    }
+
+    .quote {
+        margin: 35px auto 0;
+        max-width: 800px;
+        padding: 22px;
+        border-left: 4px solid #d4a72c;
+        background: rgba(255,255,255,0.04);
+        color: #d1d5db;
+        font-size: 18px;
+        font-style: italic;
+    }
+
+    .toc {
+        margin-top: 30px;
+        padding: 30px;
+        background: rgba(17,24,39,0.9);
+        border: 1px solid rgba(255,255,255,0.07);
+        border-radius: 18px;
+    }
+
+    .toc h2 {
+        color: #d4a72c;
+        margin-bottom: 18px;
+    }
+
+    .toc a {
+        display: block;
+        padding: 7px 0;
+        color: #d1d5db;
+        text-decoration: none;
+        transition: 0.2s;
+    }
+
+    .toc a:hover {
+        color: #d4a72c;
+        padding-left: 7px;
+    }
+
+    .section {
+        margin-top: 30px;
+        padding: 35px;
+        background: rgba(17,24,39,0.92);
+        border: 1px solid rgba(255,255,255,0.07);
+        border-radius: 18px;
+        box-shadow: 0 15px 45px rgba(0,0,0,0.18);
+    }
+
+    .section h2 {
+        margin-bottom: 20px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid rgba(212,167,44,0.25);
+        color: #d4a72c;
+        font-size: 28px;
+    }
+
+    .section h3 {
+        margin: 25px 0 10px;
+        color: #ffffff;
+    }
+
+    .section p {
+        margin-bottom: 14px;
+        color: #d1d5db;
+    }
+
+    .section ul,
+    .section ol {
+        margin: 15px 0 20px 25px;
+    }
+
+    .section li {
+        margin-bottom: 8px;
+        color: #d1d5db;
+    }
+
+    .definition {
+        margin: 15px 0;
+        padding: 18px 20px;
+        background: rgba(255,255,255,0.035);
+        border-left: 3px solid #d4a72c;
+        border-radius: 8px;
+    }
+
+    .definition strong {
+        color: #d4a72c;
+    }
+
+    .example {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+        margin: 22px 0;
+    }
+
+    .wrong,
+    .correct {
+        padding: 22px;
+        border-radius: 12px;
+    }
+
+    .wrong {
+        background: rgba(220,38,38,0.08);
+        border: 1px solid rgba(220,38,38,0.25);
+    }
+
+    .correct {
+        background: rgba(34,197,94,0.08);
+        border: 1px solid rgba(34,197,94,0.25);
+    }
+
+    .wrong strong {
+        color: #ef4444;
+    }
+
+    .correct strong {
+        color: #22c55e;
+    }
+
+    .notice {
+        margin: 22px 0;
+        padding: 22px;
+        border-radius: 12px;
+        background: linear-gradient(135deg, rgba(212,167,44,0.12), rgba(212,167,44,0.03));
+        border: 1px solid rgba(212,167,44,0.3);
+    }
+
+    .notice strong {
+        color: #d4a72c;
+    }
+
+    .steps {
+        counter-reset: step;
+        list-style: none;
+        margin-left: 0 !important;
+    }
+
+    .steps li {
+        counter-increment: step;
+        position: relative;
+        padding: 15px 20px 15px 60px;
+        margin-bottom: 12px;
+        background: rgba(255,255,255,0.035);
+        border-radius: 10px;
+    }
+
+    .steps li::before {
+        content: counter(step);
+        position: absolute;
+        left: 18px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 28px;
+        height: 28px;
+        line-height: 28px;
+        text-align: center;
+        border-radius: 50%;
+        background: #d4a72c;
+        color: #111827;
+        font-weight: bold;
+    }
+
+    .scenario {
+        margin: 18px 0;
+        padding: 25px;
+        background: rgba(255,255,255,0.035);
+        border-radius: 12px;
+        border: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .scenario h3 {
+        color: #d4a72c;
+        margin-top: 0;
+    }
+
+    .level {
+        margin: 15px 0;
+        padding: 20px;
+        border-radius: 12px;
+        background: rgba(255,255,255,0.035);
+    }
+
+    .level h3 {
+        margin-top: 0;
+        color: #d4a72c;
+    }
+
+    .footer {
+        margin: 40px 0;
+        padding: 40px;
+        text-align: center;
+        border-top: 1px solid rgba(212,167,44,0.25);
+        color: #9ca3af;
+    }
+
+    .footer strong {
+        color: #d4a72c;
+    }
+
+    @media (max-width: 750px) {
+        .container {
+            width: 95%;
+            margin: 20px auto;
+        }
+
+        .hero {
+            padding: 55px 20px;
+        }
+
+        .section {
+            padding: 25px 20px;
+        }
+
+        .example {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+```
+
+</head>
+
+<body>
+
+<div class="container">
+
+```
+<!-- HERO -->
+<header class="hero">
+    <div class="brand">Alpha Romania</div>
+
+    <h1>Roleplay</h1>
+
+    <h2>Regulament Medium Roleplay</h2>
+
+    <div class="edition">EDIȚIA 2026</div>
+
+    <div class="quote">
+        „Nu joci ca să câștigi fiecare scenă.
+        Joci pentru ca fiecare scenă să merite povestită.”
+    </div>
+</header>
+
+
+<!-- CUPRINS -->
+<div class="toc">
+    <h2>📖 Cuprins</h2>
+
+    <a href="#viziune">01. Viziunea Alpha Romania Roleplay</a>
+    <a href="#medium">02. Ce este Medium Roleplay?</a>
+    <a href="#personaj">03. Filosofia unui personaj credibil</a>
+    <a href="#definitii">04. Definiții fundamentale</a>
+    <a href="#generale">05. Reguli generale</a>
+    <a href="#mg">06. MetaGaming</a>
+    <a href="#pg">07. PowerGaming</a>
+    <a href="#frp">08. Fail Roleplay</a>
+    <a href="#fearrp">09. FearRP</a>
+    <a href="#rdm">10. RDM și VDM</a>
+    <a href="#combat">11. Combat Logging</a>
+    <a href="#nlr">12. NLR și Revenge Kill</a>
+    <a href="#conflicte">13. Escaladarea conflictelor</a>
+    <a href="#arme">14. Arme, răni și moarte</a>
+    <a href="#condus">15. Condus și urmăriri</a>
+    <a href="#politie">16. Poliție și facțiuni</a>
+    <a href="#economie">17. Economie și dezvoltarea personajului</a>
+    <a href="#ooc">18. OOC și Discord</a>
+    <a href="#scenarii">19. Scenarii exemplificate</a>
+    <a href="#raportare">20. Raportarea încălcărilor</a>
+    <a href="#sanctiuni">21. Sistem de sancțiuni</a>
+    <a href="#cod">22. Codul de conduită RP</a>
+    <a href="#concluzie">23. Concluzie</a>
+</div>
+
+
+<!-- 01 -->
+<section class="section" id="viziune">
+    <h2>01. Viziunea Alpha Romania Roleplay</h2>
+
+    <p>
+        Alpha Romania Roleplay își propune să ofere o experiență de roleplay
+        bazată pe interacțiuni credibile, personaje bine dezvoltate și situații
+        care au consecințe.
+    </p>
+
+    <p>
+        Medium Roleplay nu înseamnă că fiecare acțiune trebuie să fie o simulare
+        perfectă a vieții reale. Înseamnă însă că fiecare jucător trebuie să
+        respecte logica lumii, să își interpreteze personajul și să ofere
+        celorlalți posibilitatea de a participa activ la poveste.
+    </p>
+
+    <div class="notice">
+        <strong>PRINCIPIUL ALPHA</strong>
+        <p>
+            Într-o scenă bună nu există doar un câștigător.
+            Există o poveste bună, coerentă și memorabilă.
+        </p>
+    </div>
+
+    <p>
+        În situațiile care nu sunt prevăzute explicit în regulament,
+        se va ține cont de bunul-simț, contextul RP, intenția jucătorului,
+        gravitatea situației și decizia staff-ului.
+    </p>
+</section>
+
+
+<!-- 02 -->
+<section class="section" id="medium">
+    <h2>02. Ce este Medium Roleplay?</h2>
+
+    <p>
+        Medium Roleplay reprezintă un stil de roleplay în care realismul și
+        logica sunt importante, însă jocul păstrează suficientă libertate
+        pentru ca acțiunile să fie dinamice și distractive.
+    </p>
+
+    <ul>
+        <li>Personajul nu este invincibil.</li>
+        <li>Personajul poate greși.</li>
+        <li>Personajul poate pierde.</li>
+        <li>Acțiunile au consecințe.</li>
+        <li>Informațiile IC și OOC sunt diferite.</li>
+        <li>Ceilalți jucători trebuie să aibă posibilitatea de a reacționa.</li>
+    </ul>
+</section>
+
+
+<!-- 03 -->
+<section class="section" id="personaj">
+    <h2>03. Filosofia unui personaj credibil</h2>
+
+    <h3>Motivație</h3>
+    <p>
+        Personajul trebuie să aibă un motiv pentru ceea ce face.
+        Poate dori bani, respect, protecție, răzbunare sau o poziție socială.
+    </p>
+
+    <h3>Personalitate</h3>
+    <p>
+        Personajul poate fi calm, impulsiv, fricos, curajos, calculat,
+        sociabil sau introvertit. Important este ca personalitatea să fie
+        menținută în timp.
+    </p>
+
+    <h3>Istoric</h3>
+    <p>
+        Personajul trebuie să aibă o poveste care să explice cine este,
+        ce experiențe are și cum a ajuns în situația actuală.
+    </p>
+
+    <h3>Consecințe</h3>
+    <p>
+        Acțiunile trebuie să producă urmări. Dacă personajul fură,
+        amenință sau provoacă un conflict, trebuie să accepte posibilitatea
+        unor consecințe.
+    </p>
+</section>
+
+
+<!-- 04 -->
+<section class="section" id="definitii">
+    <h2>04. Definiții fundamentale</h2>
+
+    <div class="definition">
+        <strong>RP — Roleplay</strong><br>
+        Interpretarea unui personaj într-o lume fictivă prin acțiuni,
+        dialog și decizii.
+    </div>
+
+    <div class="definition">
+        <strong>IC — In Character</strong><br>
+        Tot ceea ce aparține personajului și universului jocului.
+    </div>
+
+    <div class="definition">
+        <strong>OOC — Out of Character</strong><br>
+        Tot ceea ce ține de jucător și nu de personaj.
+    </div>
+
+    <div class="definition">
+        <strong>MG — MetaGaming</strong><br>
+        Folosirea unei informații obținute OOC pentru a obține un avantaj IC.
+    </div>
+
+    <div class="definition">
+        <strong>PG — PowerGaming</strong><br>
+        Forțarea unei acțiuni sau a unui rezultat asupra altui jucător.
+    </div>
+
+    <div class="definition">
+        <strong>FRP — Fail Roleplay</strong><br>
+        Acțiuni care ignoră grav logica, contextul sau consecințele normale.
+    </div>
+
+    <div class="definition">
+        <strong>FearRP</strong><br>
+        Interpretarea fricii atunci când personajul se află într-o situație
+        credibilă de pericol.
+    </div>
+
+    <div class="definition">
+        <strong>RDM — Random Deathmatch</strong><br>
+        Atacarea sau uciderea unui jucător fără o justificare RP suficientă.
+    </div>
+
+    <div class="definition">
+        <strong>VDM — Vehicle Deathmatch</strong><br>
+        Folosirea intenționată a unui vehicul pentru a lovi alte personaje
+        fără justificare RP.
+    </div>
+
+    <div class="definition">
+        <strong>Combat Logging</strong><br>
+        Părăsirea intenționată a jocului pentru a evita o situație RP.
+    </div>
+
+    <div class="definition">
+        <strong>NLR — New Life Rule</strong><br>
+        Regula care limitează folosirea informațiilor din situația anterioară
+        după eliminarea personajului.
+    </div>
+
+    <div class="definition">
+        <strong>Revenge Kill</strong><br>
+        Revenirea pentru răzbunare după eliminare, fără o bază RP validă.
+    </div>
+
+    <div class="definition">
+        <strong>Character Development</strong><br>
+        Dezvoltarea personajului prin experiențe, relații, conflicte,
+        ocupații și decizii.
+    </div>
+</section>
+
+
+<!-- 05 -->
+<section class="section" id="generale">
+    <h2>05. Reguli generale de Roleplay</h2>
+
+    <h3>Respectă coerența personajului</h3>
+    <p>
+        Personajul trebuie să aibă comportamente care se potrivesc
+        personalității și poveștii sale.
+    </p>
+
+    <h3>Respectă libertatea celuilalt</h3>
+    <p>
+        Nu controla personajul altui jucător și nu decide singur rezultatul
+        unei acțiuni asupra acestuia.
+    </p>
+
+    <h3>Acceptă consecințele</h3>
+    <p>
+        Dacă ai provocat o situație, trebuie să accepți și posibilitatea
+        de a suporta urmările.
+    </p>
+
+    <h3>Nu abuza de mecanicile jocului</h3>
+    <p>
+        Mecanicile serverului nu trebuie exploatate pentru avantaje
+        nerealiste.
+    </p>
+
+    <h3>Construiește scene, nu doar rezultate</h3>
+    <p>
+        Scopul RP-ului este să creezi o experiență pentru toți participanții.
+    </p>
+</section>
+
+
+<!-- 06 -->
+<section class="section" id="mg">
+    <h2>06. MetaGaming — MG</h2>
+
+    <p>
+        MetaGaming-ul apare atunci când jucătorul folosește informații
+        pe care personajul său nu are cum să le cunoască.
+    </p>
+
+    <div class="example">
+        <div class="wrong">
+            <strong>❌ EXEMPLU GREȘIT</strong>
+            <p>
+                Vezi pe Discord că un rival se află la benzinărie
+                și mergi direct acolo pentru a-l surprinde.
+            </p>
+        </div>
+
+        <div class="correct">
+            <strong>✓ EXEMPLU CORECT</strong>
+            <p>
+                Personajul află locația prin telefon, mesaj IC,
+                martor sau altă metodă RP.
+            </p>
+        </div>
+    </div>
+
+    <div class="notice">
+        <strong>IMPORTANT:</strong>
+        Ceea ce știe jucătorul nu înseamnă automat că știe și personajul.
+    </div>
+
+    <h3>Exemple de MG</h3>
+
+    <ul>
+        <li>Folosirea unui stream pentru localizarea unui jucător.</li>
+        <li>Folosirea chatului OOC pentru avantaje IC.</li>
+        <li>Recunoașterea automată a unui personaj doar pentru că îl cunoști OOC.</li>
+        <li>Folosirea informațiilor de pe Discord în situații IC.</li>
+    </ul>
+</section>
+
+
+<!-- 07 -->
+<section class="section" id="pg">
+    <h2>07. PowerGaming — PG</h2>
+
+    <p>
+        PowerGaming-ul apare atunci când un jucător încearcă să controleze
+        rezultatul unei acțiuni asupra altui personaj.
+    </p>
+
+    <div class="example">
+        <div class="wrong">
+            <strong>❌ EXEMPLU GREȘIT</strong>
+            <p>
+                „Îți iau arma, te pun la pământ, te încătușez
+                și nu ai voie să reacționezi.”
+            </p>
+        </div>
+
+        <div class="correct">
+            <strong>✓ EXEMPLU CORECT</strong>
+            <p>
+                „Încerc să îți controlez mâna și să îți îndepărtez arma.”
+            </p>
+        </div>
+    </div>
+
+    <p>
+        Celălalt jucător trebuie să aibă posibilitatea de a reacționa,
+        exceptând situațiile în care mecanica serverului stabilește
+        explicit rezultatul.
+    </p>
+</section>
+
+
+<!-- 08 -->
+<section class="section" id="frp">
+    <h2>08. Fail Roleplay — FRP</h2>
+
+    <p>
+        Fail Roleplay reprezintă comportamentul care distruge logica
+        sau credibilitatea scenei.
+    </p>
+
+    <div class="example">
+        <div class="wrong">
+            <strong>❌ EXEMPLU GREȘIT</strong>
+            <p>
+                Ești lovit violent de o mașină și imediat te ridici,
+                alergi și continui ca și cum nimic nu s-ar fi întâmplat.
+            </p>
+        </div>
+
+        <div class="correct">
+            <strong>✓ EXEMPLU CORECT</strong>
+            <p>
+                Interpretezi impactul, durerea, dezorientarea și
+                eventualele răni.
+            </p>
+        </div>
+    </div>
+
+    <h3>FRP poate include:</h3>
+
+    <ul>
+        <li>Ignorarea completă a accidentelor.</li>
+        <li>Comportament imposibil sau exagerat.</li>
+        <li>Ignorarea unei situații evidente.</li>
+        <li>Exploatarea mecanicilor jocului.</li>
+        <li>Transformarea RP-ului într-un simplu deathmatch.</li>
+    </ul>
+</section>
+
+
+<!-- 09 -->
+<section class="section" id="fearrp">
+    <h2>09. FearRP</h2>
+
+    <p>
+        FearRP presupune că personajul apreciază riscul asupra propriei vieți.
+    </p>
+
+    <div class="notice">
+        Dacă personajul tău este singur și are mai multe persoane înarmate
+        în jurul său, trebuie să țină cont de pericol.
+    </div>
+
+    <h3>Este acceptabil:</h3>
+
+    <ul>
+        <li>Să cooperezi.</li>
+        <li>Să negociezi.</li>
+        <li>Să câștigi timp.</li>
+        <li>Să cauți o oportunitate de evadare.</li>
+        <li>Să reacționezi în funcție de personalitatea personajului.</li>
+    </ul>
+
+    <p>
+        FearRP nu înseamnă că personajul trebuie să fie laș.
+        Înseamnă că trebuie să țină cont de pericol.
+    </p>
+</section>
+
+
+<!-- 10 -->
+<section class="section" id="rdm">
+    <h2>10. RDM și VDM</h2>
+
+    <h3>RDM — Random Deathmatch</h3>
+
+    <p>
+        Atacarea sau uciderea unui jucător fără motiv RP suficient.
+    </p>
+
+    <div class="example">
+        <div class="wrong">
+            <strong>❌ GREȘIT</strong>
+            <p>
+                Împuști un necunoscut pentru că „nu îți place fața lui”.
+            </p>
+        </div>
+
+        <div class="correct">
+            <strong>✓ CORECT</strong>
+            <p>
+                Conflictul este construit prin RP și există o justificare
+                coerentă pentru escaladare.
+            </p>
+        </div>
+    </div>
+
+    <h3>VDM — Vehicle Deathmatch</h3>
+
+    <p>
+        Folosirea intenționată a vehiculului pentru a lovi sau elimina
+        alte personaje fără justificare RP.
+    </p>
+
+    <div class="notice">
+        Un accident accidental nu reprezintă automat VDM.
+        Contează intenția și contextul.
+    </div>
+</section>
+
+
+<!-- 11 -->
+<section class="section" id="combat">
+    <h2>11. Combat Logging</h2>
+
+    <p>
+        Combat Logging-ul reprezintă părăsirea intenționată a jocului
+        pentru evitarea unei situații RP sau a consecințelor acesteia.
+    </p>
+
+    <div class="example">
+        <div class="wrong">
+            <strong>❌ GREȘIT</strong>
+            <p>
+                Poliția începe să te încătușeze, iar tu închizi jocul
+                pentru a evita arestarea.
+            </p>
+        </div>
+
+        <div class="correct">
+            <strong>✓ CORECT</strong>
+            <p>
+                Rămâi în scenă și continui RP-ul până la finalul logic.
+            </p>
+        </div>
+    </div>
+
+    <h3>În cazul unui crash</h3>
+
+    <ol>
+        <li>Revino cât mai repede.</li>
+        <li>Explică situația dacă este necesar.</li>
+        <li>Continuă scena când este posibil.</li>
+    </ol>
+</section>
+
+
+<!-- 12 -->
+<section class="section" id="nlr">
+    <h2>12. NLR și Revenge Kill</h2>
+
+    <p>
+        După eliminarea personajului, situația trebuie tratată conform
+        regulilor NLR și mecanicilor serverului.
+    </p>
+
+    <div class="example">
+        <div class="wrong">
+            <strong>❌ GREȘIT</strong>
+            <p>
+                Ești eliminat într-un conflict, revii și mergi direct
+                la locul incidentului pentru răzbunare.
+            </p>
+        </div>
+
+        <div class="correct">
+            <strong>✓ CORECT</strong>
+            <p>
+                Tratezi noua situație separat și nu folosești automat
+                informațiile din situația anterioară.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<!-- 13 -->
+<section class="section" id="conflicte">
+    <h2>13. Escaladarea conflictelor</h2>
+
+    <p>
+        Un conflict bun are o evoluție logică. Nu orice ceartă trebuie
+        să ajungă instant la focuri de armă.
+    </p>
+
+    <ol class="steps">
+        <li><strong>Declanșator:</strong> datorie, insultă, furt, trădare sau neînțelegere.</li>
+        <li><strong>Discuție:</strong> personajele încearcă să rezolve situația.</li>
+        <li><strong>Presiune:</strong> apar avertismente, amenințări sau negocieri.</li>
+        <li><strong>Escaladare:</strong> situația devine mai periculoasă.</li>
+        <li><strong>Consecință:</strong> conflictul produce urmări pentru personaje.</li>
+    </ol>
+</section>
+
+
+<!-- 14 -->
+<section class="section" id="arme">
+    <h2>14. Arme, răni și moarte</h2>
+
+    <p>
+        Armele trebuie introduse în RP cu logică. O ceartă verbală nu
+        trebuie să devină automat un schimb de focuri.
+    </p>
+
+    <ul>
+        <li>Nu scoate arma fără motiv.</li>
+        <li>Nu transforma orice ceartă în violență.</li>
+        <li>Nu ignora rănile grave.</li>
+        <li>Nu interpreta personajul ca fiind invincibil.</li>
+        <li>Acceptă posibilitatea de a pierde.</li>
+        <li>Nu folosi armele doar pentru a închide o scenă.</li>
+    </ul>
+</section>
+
+
+<!-- 15 -->
+<section class="section" id="condus">
+    <h2>15. Condus, accidente și urmăriri</h2>
+
+    <ul>
+        <li>Ține cont de tipul vehiculului.</li>
+        <li>Ține cont de teren și trafic.</li>
+        <li>Nu ignora accidentele grave.</li>
+        <li>Nu transforma vehiculul într-o armă fără motiv.</li>
+        <li>Acceptă posibilitatea de a pierde o urmărire.</li>
+    </ul>
+
+    <div class="notice">
+        <strong>EXEMPLU:</strong>
+        Dacă intri cu viteză foarte mare într-un stâlp, nu este logic
+        să continui imediat cu aceeași viteză fără nicio reacție RP.
+    </div>
+</section>
+
+
+<!-- 16 -->
+<section class="section" id="politie">
+    <h2>16. Poliție, facțiuni și autoritate</h2>
+
+    <p>
+        Interacțiunea cu poliția și celelalte facțiuni trebuie tratată
+        ca RP, nu ca o competiție între jucători.
+    </p>
+
+    <ul>
+        <li>Respectă regulamentele facțiunilor.</li>
+        <li>Nu folosi informații OOC.</li>
+        <li>Nu abuza de funcție.</li>
+        <li>Nu folosi informații interne în interes personal.</li>
+        <li>Nu transforma interacțiunea într-un conflict personal OOC.</li>
+    </ul>
+
+    <div class="notice">
+        Polițistul nu trebuie să câștige fiecare scenă.
+        Civilul nu trebuie să piardă fiecare scenă.
+    </div>
+</section>
+
+
+<!-- 17 -->
+<section class="section" id="economie">
+    <h2>17. Economie și dezvoltarea personajului</h2>
+
+    <p>
+        Banii, proprietățile și reputația trebuie să aibă o bază RP.
+        Dezvoltarea personajului trebuie să fie graduală și logică.
+    </p>
+
+    <h3>Exemplu de dezvoltare</h3>
+
+    <ol class="steps">
+        <li>Personajul își găsește un loc de muncă.</li>
+        <li>Își construiește relații.</li>
+        <li>Economisește bani.</li>
+        <li>Începe o afacere.</li>
+        <li>Își dezvoltă reputația.</li>
+        <li>Ajunge treptat la un statut mai ridicat.</li>
+    </ol>
+</section>
+
+
+<!-- 18 -->
+<section class="section" id="ooc">
+    <h2>18. OOC, Discord și informații externe</h2>
+
+    <p>
+        Discord-ul și alte platforme externe sunt în principal spații OOC.
+    </p>
+
+    <h3>Este interzis:</h3>
+
+    <ul>
+        <li>Folosirea informațiilor Discord pentru MG.</li>
+        <li>Folosirea stream-urilor pentru localizarea jucătorilor.</li>
+        <li>Coordonarea unor situații IC prin informații care nu există în joc.</li>
+        <li>Transformarea conflictelor OOC în conflicte IC.</li>
+        <li>Folosirea informațiilor personale pentru avantaje în RP.</li>
+    </ul>
+</section>
+
+
+<!-- 19 -->
+<section class="section" id="scenarii">
+    <h2>19. Scenarii exemplificate</h2>
+
+    <div class="scenario">
+        <h3>SCENARIUL 1 — Dispută la magazin</h3>
+
+        <p>
+            Doi jucători se ceartă deoarece unul îl acuză pe celălalt
+            că i-a furat un obiect.
+        </p>
+
+        <p>
+            <strong>✓ RP BUN:</strong>
+            Discută, caută martori, verifică informațiile și escaladează
+            doar dacă situația o justifică.
+        </p>
+
+        <p>
+            <strong>✗ RP SLAB:</strong>
+            Unul îl împușcă instant doar pentru că a fost acuzat.
+        </p>
+    </div>
+
+
+    <div class="scenario">
+        <h3>SCENARIUL 2 — Urmărire cu poliția</h3>
+
+        <p>
+            Un personaj este oprit de poliție și decide să fugă.
+        </p>
+
+        <p>
+            <strong>✓ RP BUN:</strong>
+            Încearcă să scape, conduce credibil, acceptă accidentele
+            și suportă eventualele consecințe.
+        </p>
+
+        <p>
+            <strong>✗ RP SLAB:</strong>
+            Face manevre imposibile, închide jocul sau folosește
+            informații OOC.
+        </p>
+    </div>
+
+
+    <div class="scenario">
+        <h3>SCENARIUL 3 — Jaf</h3>
+
+        <p>
+            Un grup dorește să jefuiască o locație.
+        </p>
+
+        <p>
+            <strong>✓ RP BUN:</strong>
+            Există planificare, roluri, risc, comunicare și posibilitatea
+            de eșec.
+        </p>
+
+        <p>
+            <strong>✗ RP SLAB:</strong>
+            Jucătorii scot armele și presupun că simpla lor prezență
+            garantează succesul.
+        </p>
+    </div>
+
+
+    <div class="scenario">
+        <h3>SCENARIUL 4 — Informație de pe Discord</h3>
+
+        <p>
+            Un jucător află OOC unde se află rivalul său.
+        </p>
+
+        <p>
+            <strong>✓ RP BUN:</strong>
+            Ignoră informația până când personajul poate afla locația IC.
+        </p>
+
+        <p>
+            <strong>✗ RP SLAB:</strong>
+            Merge direct la locație și începe conflictul.
+        </p>
+    </div>
+</section>
+
+
+<!-- 20 -->
+<section class="section" id="raportare">
+    <h2>20. Raportarea încălcărilor</h2>
+
+    <h3>1. Strânge dovezi</h3>
+
+    <ul>
+        <li>Clipuri.</li>
+        <li>Capturi de ecran.</li>
+        <li>Timestamp.</li>
+        <li>Alte dovezi relevante.</li>
+    </ul>
+
+    <h3>2. Explică situația</h3>
+
+    <p>
+        Nu este suficient să spui „a făcut MG”.
+        Explică exact ce s-a întâmplat și cum a fost obținut avantajul.
+    </p>
+
+    <h3>3. Nu continua conflictul OOC</h3>
+
+    <p>
+        Lasă staff-ul să analizeze situația.
+    </p>
+
+    <h3>4. Raportează cu bună-credință</h3>
+
+    <p>
+        Raportările false sau făcute pentru răzbunare pot fi sancționate.
+    </p>
+</section>
+
+
+<!-- 21 -->
+<section class="section" id="sanctiuni">
+    <h2>21. Sistem orientativ de sancțiuni</h2>
+
+    <p>
+        Sancțiunea finală aparține staff-ului și poate depinde de gravitate,
+        intenție, istoricul jucătorului, dovezi și impactul asupra comunității.
+    </p>
+
+    <div class="level">
+        <h3>NIVEL 1 — ABATERE MINORĂ</h3>
+        <p>
+            Greșeli izolate sau încălcări cu impact redus.
+        </p>
+        <strong>Posibile sancțiuni:</strong>
+        <p>Avertisment, atenționare sau sancțiune ușoară.</p>
+    </div>
+
+    <div class="level">
+        <h3>NIVEL 2 — ABATERE MEDIE</h3>
+        <p>
+            MG, PG, FRP repetat sau încălcări intenționate.
+        </p>
+        <strong>Posibile sancțiuni:</strong>
+        <p>Avertisment oficial sau sancțiune temporară.</p>
+    </div>
+
+    <div class="level">
+        <h3>NIVEL 3 — ABATERE GRAVĂ</h3>
+        <p>
+            RDM, VDM intenționat, Combat Logging repetat sau abuzuri evidente.
+        </p>
+        <strong>Posibile sancțiuni:</strong>
+        <p>Suspendare sau sancțiune severă.</p>
+    </div>
+
+    <div class="level">
+        <h3>NIVEL 4 — ABATERE FOARTE GRAVĂ</h3>
+        <p>
+            Exploatarea sistematică a regulamentului, abuz repetat sau
+            comportament toxic persistent.
+        </p>
+        <strong>Posibile sancțiuni:</strong>
+        <p>Sancțiuni majore sau excluderea din comunitate.</p>
+    </div>
+</section>
+
+
+<!-- 22 -->
+<section class="section" id="cod">
+    <h2>22. Codul de conduită RP</h2>
+
+    <div class="notice">
+        <strong>1. RESPECTĂ SCENA</strong><br>
+        Nu transforma fiecare situație într-o competiție.
+    </div>
+
+    <div class="notice">
+        <strong>2. RESPECTĂ PERSONAJUL</strong><br>
+        Joacă personajul pe care l-ai construit.
+    </div>
+
+    <div class="notice">
+        <strong>3. RESPECTĂ OPORTUNITATEA CELUILALT</strong><br>
+        Lasă și ceilalți jucători să contribuie la poveste.
+    </div>
+
+    <div class="notice">
+        <strong>4. ACCEPTĂ CONSECINȚELE</strong><br>
+        Uneori personajul tău va pierde. Acest lucru face parte din RP.
+    </div>
+
+    <div class="notice">
+        <strong>5. NU CĂUTA PORTIȚE</strong><br>
+        Regulamentul există pentru protejarea experienței de joc,
+        nu pentru găsirea unor metode de a ocoli regulile.
+    </div>
+</section>
+
+
+<!-- 23 -->
+<section class="section" id="concluzie">
+    <h2>23. Concluzie</h2>
+
+    <p>
+        Medium Roleplay este, înainte de toate, un acord între jucători:
+    </p>
+
+    <div class="quote">
+        „Eu îți respect povestea, iar tu o respecți pe a mea.”
+    </div>
+
+    <p>
+        Nu fiecare scenă trebuie să fie perfectă.
+        Nu fiecare jucător trebuie să câștige.
+        Nu fiecare conflict trebuie să se termine cu o victorie.
+    </p>
+
+    <p>
+        Important este ca fiecare scenă să aibă:
+    </p>
+
+    <ul>
+        <li>Logică.</li>
+        <li>Consecvență.</li>
+        <li>Respect.</li>
+        <li>Interacțiune.</li>
+        <li>Consecințe.</li>
+        <li>Poveste.</li>
+    </ul>
+
+    <div class="notice">
+        <strong>ALPHA ROMANIA ROLEPLAY</strong>
+
+        <p>
+            Construim o comunitate în care o scenă bună nu se termină
+            cu întrebarea „cine a câștigat?”, ci cu:
+        </p>
+
+        <p>
+            <strong>„Ce poveste am creat împreună?”</strong>
+        </p>
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>
+        <strong>ALPHA ROMANIA ROLEPLAY</strong>
+    </p>
+
+    <p>
+        Regulament Medium Roleplay • Ediția 2026
+    </p>
+
+    <p>
+        Respectă Roleplay-ul • Respectă jucătorii • Respectă povestea
+    </p>
+</footer>
+```
+
+</div>
+
+</body>
+</html>
